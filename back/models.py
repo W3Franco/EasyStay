@@ -8,3 +8,4 @@ class stay(models.Model):
     description = models.CharField(max_length=1000, default="", unique=False)
     available = models.BooleanField(null=False, default=False)
     created_at = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='stays/', null=True, blank=True)
